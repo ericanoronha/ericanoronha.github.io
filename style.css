@@ -7,11 +7,11 @@ h3,
 ul,
 li {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 h2 {
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 body {
@@ -19,21 +19,21 @@ body {
     font-size: 16px;
     background: #fafafa;
     text-rendering: optimizeLegibility;
-    color: #292929
+    color: #292929;
 }
 
 ::selection {
-    background: #b2cede
+    background: #b2cede;
 }
 
 a {
     color: #316e96;
     text-decoration: none;
-    transition: color .25s ease
+    transition: color .25s ease;
 }
 
 a:hover {
-    color: #5499c7cc
+    color: #5499c7cc;
 }
 
 a::selection {
@@ -41,44 +41,44 @@ a::selection {
     text-decoration-color: #316e96;
     text-decoration-line: underline;
     text-decoration-style: dashed;
-    text-decoration-thickness: 2px
+    text-decoration-thickness: 2px;
 }
 
 a:focus {
-    border: .25rem #d697ac solid inset
+    border: .25rem #d697ac solid inset;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.5;
     width: 100%;
-    text-align: left
+    text-align: left;
 }
 
 li {
-    list-style: none
+    list-style: none;
 }
 
 li+li {
-    margin-left: .85rem
+    margin-left: .85rem;
 }
 
 section {
-    width: 70%;
-    margin: 0 auto
+    max-width: 70ch;
+    margin: 0 auto;
 }
 
 section+section {
-    margin-top: 3rem
+    margin-top: 3rem;
 }
 
 header,
 footer {
-    padding: 15px 30px
+    padding: 15px 30px;
 }
 
 main {
-    padding: 0 30px
+    padding: 0 30px;
 }
 
 .visually-hidden {
@@ -92,7 +92,7 @@ main {
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .desativarclick {
@@ -102,69 +102,98 @@ main {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center
+    justify-content: center;
+    align-items: center;
 }
 
 header div:nth-child(1) {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 header img {
-    margin-right: 1rem
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 3.5rem;
 }
 
 .icone {
-    height: 40px
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
 }
 
 .contato a {
-    display: inline-block
+    display: inline-flex
 }
 
 .sobre div:nth-child(2) {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 .sobre img {
     opacity: .7;
-    transition: all .25s ease
+    transition: all .25s ease;
 }
 
 .sobre img:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 footer {
-    text-align: right
+    text-align: right;
+}
+
+footer img {
+    width: 0.438rem;
+    height: 0.375rem;
 }
 
 @media screen and (max-width:740px) {
     section {
-        width: 100%
+        width: 100%;
     }
 
     p {
-        font-size: .9rem
+        font-size: .9rem;
     }
 
-    .icone {
-        height: 30px
+    a {
+        color: #316e96;
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparents;
+    }
+
+    a:active {
+        border: 1px dashed #316e96;
     }
 }
 
 @media screen and (max-width:400px) {
     h1 {
-        font-size: 1.6rem
+        font-size: 1.6rem;
     }
+
+    header img {
+        display: none;
+    }
+
+    .icone {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
 }

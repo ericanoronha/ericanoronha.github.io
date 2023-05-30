@@ -10,12 +10,14 @@
   <link href="style.css?v=6" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Portfolio de Erica Noronha | Desenvolvedora web front-end">
+  <meta name="theme-color" content="#b2cede" />
 </head>
 
 <body>
   <header class="desativarclick">
-    <img src="img/avatar-pixelart.png" role="presentation">
-    <h1>Erica Noronha</h1>
+    <img src="img/avatar-pixelart.png" role="presentation" aria-labelledby="nome">
+    <h1 id="nome">Erica Noronha</h1>
   </header>
   <main>
     <section class="sobre" aria-describedby="sobre">
@@ -23,9 +25,9 @@
         <h2 id="sobre" class="visually-hidden">Sobre mim</h2>
         <p>Olá! Me chamo Erica Noronha, moro no Rio de Janeiro. 😊</p>
         <p>Sou formada em Bacharelado em Sistemas de Informação e atualmente estou cursando pós-graduação em Design de interfaces acessíveis: UX e acessibilidade digital, pela PUCSP.</p>
-        <p>Iniciei minha carreira estagiando com front-end ao final do primeiro período da faculdade. Tive a oportunidade de desenvolver páginas institucionais, landing pages, e-mail marketing e outros na <strong>Atrevo Comunicação e Design</strong> e na <strong>Ingresso.com</strong>.</p>
-        <p>Trabalhei em agências parceiras <strong>VTEX</strong>, dando suporte a e-commerces, aprimorando minhas habilidades com JavaScript, HTML, CSS, Bootstrap e jQuery. Além dessas experiências em front-end para web, desenvolvi um aplicativo em Flutter como meu <a href="https://www.linkedin.com/feed/update/urn:li:activity:6814316469329960960/" target="_blank">trabalho de conclusão de curso</a> da graduação.</p>
-        <p>Hoje trabalho como engenheira de software na <strong>ViaHub</strong>, com foco em front-end ReactJS/NextJS.</p>
+        <p>Iniciei minha carreira estagiando em front-end voltado para marketing e comunicação, onde desenvolvi páginas institucionais, landing pages, peças de e-mail marketing entre outros projetos na <strong>Atrevo Comunicação e Design</strong> e na <strong>Ingresso.com</strong>.</p>
+        <p>Também trabalhei em agências parceiras <strong>VTEX</strong>, dando suporte a e-commerces, aprimorando minhas habilidades com JavaScript, HTML, CSS, Bootstrap e jQuery. Além dessas experiências para web, desenvolvi um aplicativo em Flutter como meu trabalho de conclusão de curso da graduação.</p>
+        <p>Hoje trabalho como engenheira de software na <strong>ViaHub</strong>, construindo o design system do grupo com ReactJS, Storybook, Figma e Jest.</p>
       </div>
       <div aria-describedby="hardskills">
         <span id="hardskills" class="visually-hidden">Hard skills</span>
@@ -40,18 +42,16 @@
     </section>
     <section class="contato" aria-describedby="Contato">
       <h2 id="contato" class="desativarclick">Contato</h2>
-      <a href="https://github.com/ericanoronha" target="_blank" title="Visite meu perfil no GitHub">
-        <span class="visually-hidden" id="github">Clique aqui para visitar meu perfil no GitHub</span>
-        <img class="icone" src="img/icone-github.png" role="presentation" aria-labelledby="github">
+      <a href="https://github.com/ericanoronha" target="_blank" title="Clique aqui para visitar meu perfil no GitHub">
+        <img class="icone" src="img/icone-github.png" role="presentation" alt="ícone GitHub">
       </a>
-      <a href="https://www.linkedin.com/in/ericanoronha/" target="_blank" title="Visite meu perfil no Linked In">
-        <span class="visually-hidden" id="linkedin">Clique aqui para visitar meu perfil no Linked In</span>
-        <img class="icone" src="img/icone-linkedin.png" role="presentation">
+      <a href="https://www.linkedin.com/in/ericanoronha/" target="_blank" title="Clique aqui para visitar meu perfil no Linked In">
+        <img class="icone" src="img/icone-linkedin.png" role="presentation" alt="ícone Linked In">
       </a>
     </section>
   </main>
-  <footer class="desativarclick">
-    <small>Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" role="presentation" /> 2020</small>
+  <footer class="desativarclick" aria-describedby="rodape">
+    <small id="rodape">Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" role="presentation" /> 2020</small>
   </footer>
 </body>
 

@@ -1,1 +1,183 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500&display=swap");body,h1,h2,h3,ul,li{margin:0;padding:0}h2{margin-bottom:1rem}:root{font-size:16px}::selection{background:#b5e5f7}*{font-family:"Source Code Pro",monospace;text-rendering:optimizeLegibility;color:black}p{font-size:1rem;line-height:1.5;width:100%;text-align:justify}p:last-child{text-align:center}strong{color:#c39bd3}a{color:#5499c7;text-decoration:none;transition:color .25s ease}a:hover{color:#5499c7cc}li{list-style:none}li+li{margin-left:.85rem}section{width:70%;margin:0 auto}section+section{margin-top:3rem}header,footer{padding:15px 30px}main{padding:0 30px}.desativarclick{pointer-events:none;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}header{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center}header div:nth-child(1){display:flex;align-items:center}header img{margin-right:1rem}.icone{height:40px}.sobre div:nth-child(2){display:flex;justify-content:space-evenly;align-items:center;margin-top:2rem}.sobre img{opacity:.7;transition:all .25s ease}.sobre img:hover{opacity:1}footer{text-align:right}@media screen and (max-width:740px){section{width:100%}p{font-size:.9rem}.icone{height:30px}}@media screen and (max-width:400px){h1{font-size:1.6rem}}
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500&display=swap");
+
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    background: #fafafa;
+    text-rendering: optimizeLegibility;
+    color: #292929;
+}
+
+::selection {
+    background: #d5819d;
+}
+
+strong::selection {
+    color: #fafafa;
+}
+
+a::selection {
+    text-decoration-color: #316E96;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+}
+
+a:focus {
+    border: 0.25rem #D697AC solid inset;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: left;
+}
+
+
+strong {
+    color: #357b97;
+}
+
+a {
+    color: #316E96;
+    text-decoration: none;
+    transition: color .25s ease
+}
+
+a:hover {
+    color: #5499c7cc;
+}
+
+
+li {
+    list-style: none
+}
+
+li+li {
+    margin-left: .85rem
+}
+
+section {
+    width: 70%;
+    margin: 0 auto
+}
+
+section+section {
+    margin-top: 3rem
+}
+
+header,
+footer {
+    padding: 15px 30px
+}
+
+main {
+    padding: 0 30px
+}
+
+.visually-hidden {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px, 1px, 1px, 1px);
+    /*maybe deprecated but we need to support legacy browsers */
+    clip-path: inset(50%);
+    /*modern browsers, clip-path works inwards from each corner*/
+    white-space: nowrap;
+    /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+.desativarclick {
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center
+}
+
+header div:nth-child(1) {
+    display: flex;
+    align-items: center
+}
+
+header img {
+    margin-right: 1rem
+}
+
+.icone {
+    height: 40px;
+}
+
+.contato a {
+    display: inline-block;
+}
+
+.sobre div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem
+}
+
+.sobre img {
+    opacity: .7;
+    transition: all .25s ease
+}
+
+.sobre img:hover {
+    opacity: 1
+}
+
+footer {
+    text-align: right
+}
+
+@media screen and (max-width:740px) {
+    section {
+        width: 100%
+    }
+
+    p {
+        font-size: .9rem
+    }
+
+    .icone {
+        height: 30px
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 1.6rem
+    }
+}

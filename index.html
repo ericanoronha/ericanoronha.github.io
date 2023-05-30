@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erica Noronha</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="style.min.css?v=5" rel="stylesheet" type="text/css" />
+  <link href="style.css?v=6" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header class="desativarclick">
-    <img src="img/avatar-pixelart.png">
+    <img src="img/avatar-pixelart.png" role="presentation">
     <h1>Erica Noronha</h1>
   </header>
   <main>
@@ -31,7 +31,8 @@
         <span id="hardskills" class="visually-hidden">Hard skills</span>
         <img class="icone desativarclick" src="img/icones/html.png" alt="HTML">
         <img class="icone desativarclick" src="img/icones/css.png" alt="CSS">
-        <img class="icone desativarclick" src="img/icones/javascript.png" alt="JavaScript"><img class="icone desativarclick" src="img/icones/github.png" alt="Github">
+        <img class="icone desativarclick" src="img/icones/javascript.png" alt="JavaScript">
+        <img class="icone desativarclick" src="img/icones/github.png" alt="Github">
         <img class="icone desativarclick" src="img/icones/reactjs.png" alt="React">
         <img class="icone desativarclick" src="img/icones/angular.png" alt="Angular">
         <img class="icone desativarclick" src="img/icones/flutter.png" alt="Flutter">
@@ -39,16 +40,18 @@
     </section>
     <section class="contato" aria-describedby="Contato">
       <h2 id="contato" class="desativarclick">Contato</h2>
-      <a href="https://github.com/ericanoronha" target="_blank" title="Visite meu perfil no GitHub" id="github">
-        <img class="icone" src="img/icone-github.png" aria-labelledby="github">
+      <a href="https://github.com/ericanoronha" target="_blank" title="Visite meu perfil no GitHub">
+        <span class="visually-hidden" id="github">Clique aqui para visitar meu perfil no GitHub</span>
+        <img class="icone" src="img/icone-github.png" role="presentation" aria-labelledby="github">
       </a>
-      <a href="https://www.linkedin.com/in/ericanoronha/" target="_blank" title="Visite meu perfil no Linked In" id="linkedin">
-        <img class="icone" src="img/icone-linkedin.png" aria-labelledby="linkedin">
+      <a href="https://www.linkedin.com/in/ericanoronha/" target="_blank" title="Visite meu perfil no Linked In">
+        <span class="visually-hidden" id="linkedin">Clique aqui para visitar meu perfil no Linked In</span>
+        <img class="icone" src="img/icone-linkedin.png" role="presentation">
       </a>
     </section>
   </main>
   <footer class="desativarclick">
-    <small>Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" /> 2020</small>
+    <small>Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" role="presentation" /> 2020</small>
   </footer>
 </body>
 

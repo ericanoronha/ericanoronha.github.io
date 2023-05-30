@@ -7,11 +7,11 @@ h3,
 ul,
 li {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 
 body {
@@ -19,50 +19,41 @@ body {
     font-size: 16px;
     background: #fafafa;
     text-rendering: optimizeLegibility;
-    color: #292929;
+    color: #292929
 }
 
 ::selection {
-    background: #d5819d;
+    background: #b2cede
 }
 
-strong::selection {
-    color: #fafafa;
+a {
+    color: #316e96;
+    text-decoration: none;
+    transition: color .25s ease
+}
+
+a:hover {
+    color: #5499c7cc
 }
 
 a::selection {
-    text-decoration-color: #316E96;
+    color: #292929;
+    text-decoration-color: #316e96;
     text-decoration-line: underline;
     text-decoration-style: dashed;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 2px
 }
 
 a:focus {
-    border: 0.25rem #D697AC solid inset;
+    border: .25rem #d697ac solid inset
 }
 
 p {
     font-size: 1rem;
     line-height: 1.5;
     width: 100%;
-    text-align: left;
+    text-align: left
 }
-
-
-strong {
-    color: #357b97;
-}
-
-a {
-    color: #316E96;
-    text-decoration: none;
-    transition: color .25s ease
-}
-
-a:hover {
-    color: #5499c7cc;
-}
-
 
 li {
     list-style: none
@@ -99,13 +90,9 @@ main {
     width: 1px;
     overflow: hidden;
     clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
     clip: rect(1px, 1px, 1px, 1px);
-    /*maybe deprecated but we need to support legacy browsers */
     clip-path: inset(50%);
-    /*modern browsers, clip-path works inwards from each corner*/
-    white-space: nowrap;
-    /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+    white-space: nowrap
 }
 
 .desativarclick {
@@ -135,11 +122,11 @@ header img {
 }
 
 .icone {
-    height: 40px;
+    height: 40px
 }
 
 .contato a {
-    display: inline-block;
+    display: inline-block
 }
 
 .sobre div:nth-child(2) {

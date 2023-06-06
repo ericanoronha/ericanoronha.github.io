@@ -52,7 +52,7 @@ p {
     font-size: 1rem;
     line-height: 1.5;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 li {
@@ -130,7 +130,8 @@ header img {
 }
 
 .contato a {
-    display: inline-flex
+    display: inline-flex;
+    border: 1px solid transparents;
 }
 
 .sobre div:nth-child(2) {
@@ -143,6 +144,7 @@ header img {
 .sobre img {
     opacity: .7;
     transition: all .25s ease;
+    mix-blend-mode: multiply;
 }
 
 .sobre img:hover {
@@ -174,11 +176,15 @@ footer img {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid transparents;
     }
 
     a:active {
         border: 1px dashed #316e96;
+    }
+
+    footer {
+        font-size: 0.85rem;
+        text-align: center;
     }
 }
 

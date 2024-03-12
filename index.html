@@ -7,28 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erica Noronha</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="style.css?v=6" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="description" content="Portfolio de Erica Noronha | Desenvolvedora web front-end">
-  <meta name="theme-color" content="#b2cede" />
+  <meta name="theme-color" content="b2cede" />
 </head>
 
 <body>
   <header class="desativarclick">
-    <img src="img/avatar-pixelart.png" role="presentation" aria-labelledby="nome">
-    <h1 id="nome">Erica Noronha</h1>
+    <img src="img/avatar-pixelart.png" aria-hidden="true">
+    <h1>Erica Noronha</h1>
   </header>
   <main>
     <section class="sobre" aria-describedby="sobre">
       <div>
         <h2 id="sobre" class="visually-hidden">Sobre mim</h2>
-        <p>Olá! Me chamo Erica Noronha, moro no Rio de Janeiro. 😊</p>
-        <p>Sou formada em Bacharelado em Sistemas de Informação e atualmente estou cursando pós-graduação em Design de interfaces acessíveis: UX e acessibilidade digital, pela PUC SP.</p>
+        <p>Olá! Me chamo Erica Noronha e moro no Rio de Janeiro. 😊</p>
+        <p>Sou formada em Bacharelado em Sistemas de Informação, com especialização em Design de interfaces acessíveis (UX e acessibilidade digital) e, atualmente, curso pós graduação em Marketing e Mídias Digitais na FGV.</p>
         <p>Iniciei minha carreira estagiando em front-end voltado para marketing e comunicação, onde desenvolvi páginas institucionais, landing pages, peças de e-mail marketing entre outros projetos na <strong>Atrevo Comunicação e Design</strong> e na <strong>Ingresso.com</strong>.</p>
         <p>Também trabalhei em agências parceiras <strong>VTEX</strong>, dando suporte a e-commerces, aprimorando minhas habilidades com JavaScript, HTML, CSS, Bootstrap e jQuery.</p>
-        <p>Além dessas experiências para web, desenvolvi um aplicativo em Flutter como meu trabalho de conclusão de curso da graduação.</p>
-        <p>Hoje trabalho como engenheira de software na <strong>ViaHub</strong>, construindo o design system do grupo com ReactJS, Storybook, Figma e Jest.</p>
+        <p>Minha mais recente atuação como engenheira de software foi na <strong>Casas Bahia Tecnologia/ViaHub</strong>, construindo o Design System do grupo com ReactJS, Storybook, Figma e testes automatizados. E, além dessas experiências para web, no Trabalho de Conclusão de Curso atuei em diversas funções, entre elas a gerência do projeto, levantamento de requisitos, prototipação de telas, scrum master e desenvolvimento mobile.</p>
+        <p>Minha paixão por criar experiências digitais me levou a explorar o cruzamento entre tecnologia, design, estratégias de marketing, produto e objetivos de negócio.
+          Estou sempre em busca de novos desafios e oportunidades para aplicar minha experiência e conhecimento em projetos inovadores.</p>
       </div>
       <div aria-describedby="hardskills">
         <span id="hardskills" class="visually-hidden">Hard skills</span>
@@ -37,23 +38,69 @@
         <img class="icone desativarclick" src="img/icones/javascript.png" alt="JavaScript" width="40" height="40">
         <img class="icone desativarclick" src="img/icones/accessibility.png" alt="Acessibilidade digital" width="40" height="40">
         <img class="icone desativarclick" src="img/icones/github.png" alt="Github" width="40" height="40">
+        <img class="icone desativarclick" src="img/icones/wordpress.png" alt="WordPress" width="40" height="40">
         <img class="icone desativarclick" src="img/icones/reactjs.png" alt="React" width="40" height="40">
         <img class="icone desativarclick" src="img/icones/angular.png" alt="Angular" width="40" height="40">
         <img class="icone desativarclick" src="img/icones/flutter.png" alt="Flutter" width="40" height="40">
       </div>
     </section>
+    <section class="portfolio" aria-describedby="portfolio">
+      <h2 id="portfolio" class="desativarclick">Alguns projetos desenvolvidos por mim</h2>
+      <ul>
+        <li>
+          <h3>Grupo Along</h3>
+          <div class="portfolio-thumbnail-decorator">
+            <iframe src="http://grupoalong.com.br/" frameborder="0" class="portfolio-thumbnail desativarclick"></iframe>
+          </div>
+          <p>HTML | CSS | JavaScript</p>
+          <a href="http://grupoalong.com.br/" target="_blank" class="portfolio-thumbnail-link">
+            Clique aqui para visitar a demonstração do projeto
+          </a>
+        </li>
+        <li>
+          <h3>Bikcraft</h3>
+          <div class="portfolio-thumbnail-decorator">
+            <iframe src="/portfolio/bikcraft/index.html" frameborder="0" class="portfolio-thumbnail desativarclick"></iframe>
+          </div>
+          <p>HTML | CSS | JavaScript</p>
+          <a href="/portfolio/bikcraft/index.html" target="_blank" class="portfolio-thumbnail-link">
+            Clique aqui para visitar a demonstração do projeto
+          </a>
+        </li>
+        <li>
+          <h3>JR Barcode</h3>
+          <div class="portfolio-thumbnail-decorator">
+            <iframe src="http://www.jrbarcode.com.br/" frameborder="0" class="portfolio-thumbnail desativarclick"></iframe>
+          </div>
+          <p>WordPress | HTML | CSS | JavaScript</p>
+          <a href="http://www.jrbarcode.com.br/" target="_blank" class="portfolio-thumbnail-link">
+            Clique aqui para visitar a demonstração do projeto
+          </a>
+        </li>
+        <li>
+          <h3>Listagem de tarefas</h3>
+          <div class="portfolio-thumbnail-decorator">
+            <iframe src="https://crudcomqualidade-ericanoronha.vercel.app/" frameborder="0" class="portfolio-thumbnail desativarclick"></iframe>
+          </div>
+          <p>HTML | CSS | React | JavaScript | TypeScript</p>
+          <a href="#" target="_blank" class="portfolio-thumbnail-link">
+            Clique aqui para visitar a demonstração do projeto
+          </a>
+        </li>
+      </ul>
+    </section>
     <section class="contato" aria-describedby="contato">
       <h2 id="contato" class="desativarclick">Contato</h2>
       <a href="https://github.com/ericanoronha" target="_blank" title="Clique aqui para visitar meu perfil no GitHub">
-        <img class="icone" src="img/icone-github.png" role="presentation" alt="ícone GitHub">
+        <img class="icone" src="img/icone-github.png" alt="ícone GitHub">
       </a>
       <a href="https://www.linkedin.com/in/ericanoronha/" target="_blank" title="Clique aqui para visitar meu perfil no Linked In">
-        <img class="icone" src="img/icone-linkedin.png" role="presentation" alt="ícone Linked In">
+        <img class="icone" src="img/icone-linkedin.png" alt="ícone Linked In">
       </a>
     </section>
   </main>
   <footer class="desativarclick" aria-describedby="rodape">
-    <small id="rodape">Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" role="presentation" /> 2020</small>
+    <small id="rodape">Desenvolvido por Erica Noronha <img src="img/s2.gif" alt="Feito com carinho" role="presentation" /> 2020-2024</small>
   </footer>
 </body>
 

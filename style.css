@@ -52,7 +52,7 @@ p {
     font-size: 1rem;
     line-height: 1.5;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 li {
@@ -129,6 +129,89 @@ header img {
     object-fit: cover;
 }
 
+.portfolio ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5ch;
+}
+
+.portfolio ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 2ch;
+}
+
+.portfolio ul li+li {
+    margin-left: 0;
+}
+
+.portfolio-thumbnail {
+    width: 100%;
+    height: 100%;
+    opacity: .93;
+    background-color: #29AAE3;
+}
+
+.portfolio-thumbnail-link {
+    display: block;
+}
+
+.portfolio-thumbnail-decorator {
+    width: 360px;
+    height: 230px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75), inset 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+    border: lightgray solid 2rem;
+}
+
+.portfolio-thumbnail-decorator::after {
+    content: '-';
+    font-size: 3rem;
+    font-family: fantasy;
+    letter-spacing: 0.20em;
+    position: relative;
+    top: -20px;
+    left: -1px;
+    animation: blink 5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+
+    30% {
+        color: limegreen;
+    }
+
+    100% {
+        color: limegreen;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        color: black;
+    }
+
+    30% {
+        color: limegreen;
+    }
+
+    100% {
+        color: limegreen;
+    }
+}
+
+.portfolio p {
+margin-top: -10px;
+margin-bottom: -10px;
+}
+
 .contato a {
     display: inline-flex;
     border: 1px solid transparents;
@@ -180,6 +263,13 @@ footer img {
 
     a:active {
         border: 1px dashed #316e96;
+    }
+
+    .portfolio-thumbnail-decorator {
+        transform: scale(0.5);
+        margin-bottom: -75px;
+        margin-left: -105px;
+        margin-top: -75px;
     }
 
     footer {

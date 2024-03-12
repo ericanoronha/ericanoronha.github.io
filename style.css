@@ -272,6 +272,7 @@ footer img {
         margin-top: -75px;
     }
 
+
     footer {
         font-size: 0.85rem;
         text-align: center;
@@ -287,9 +288,18 @@ footer img {
         display: none;
     }
 
+    .portfolio-thumbnail-decorator::after {
+        display: none;
+    }
+
     .icone {
         width: 1.5rem;
         height: 1.5rem;
     }
+}
 
+@media screen and (orientation: landscape) {
+    .portfolio-thumbnail-decorator::after {
+        display: none;
+    }
 }

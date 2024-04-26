@@ -28,7 +28,7 @@ body {
 
 a {
     color: #316e96;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color .25s ease;
 }
 
